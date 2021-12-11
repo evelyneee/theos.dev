@@ -22,3 +22,6 @@ Create a file named `<instance>-Bridging-Header.h` in your project directory and
 
 ## Tweaks
 Due to discrepancies between the Swift and Objective-C ABIs and the fact that the [Logos](https://github.com/theos/logos) preprocessor only supports Objective-C, it is not currently possible to write tweaks in or for Swift. There is, however, a high probability that there will be ways to make Swift tweaks in the future, since Swift is now ABI stable.
+
+## Tweaks 
+You can make Swift tweaks using [Orion](https://orion.theos.dev). Do note that Orion does not support hooking Swift code at the moment. 
