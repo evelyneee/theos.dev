@@ -20,5 +20,5 @@ Create a file named `<instance>-Bridging-Header.h` in your project directory and
 * `<instance>_SWIFTFLAGS` or `<file>_SWIFTFLAGS` *string*. Default: empty. Custom flags to pass to the Swift compiler for all files or a specific file (respectively).
 * `<instance>_SWIFT_BRIDGING_HEADER` *filename*. Default: `<instance>-Bridging-Header.h`. The path to the [Objective-C bridging header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift) to be imported into all Swift files during compilation. For more information, see [Objective-C to Swift Interoperability](#objective-c-to-swift).
 
-## Tweaks
-Due to discrepancies between the Swift and Objective-C ABIs and the fact that the [Logos](https://github.com/theos/logos) preprocessor only supports Objective-C, it is not currently possible to write tweaks in or for Swift. There is, however, a high probability that there will be ways to make Swift tweaks in the future, since Swift is now ABI stable.
+## Tweaks 
+You can make Swift tweaks using [Orion](https://orion.theos.dev). Do note that Orion does not support hooking Swift code at the moment. 
